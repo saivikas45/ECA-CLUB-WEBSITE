@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ECA Club - SNIST</title>
+    <link rel="shortcut icon" type="in.png" href="in.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="mainstyles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="typing-animation">ECA Club - SNIST.</h1>
+    </header>
+    <div class="navbar">
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#events">Events</a>
+            <a href="lr copy.html">Our Board</a>
+            <a href="#join">Join Us</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </div>
+   
+    
+   
+   <span id="element"></span>
+   <section id="about">
+    <div class="split-container">
+        <div class="left-content">
+            <div class="home-content">
+                <h1 class="head">Welcome to, <span>ECA Club</span></h1>
+                <h3 class="typing-text"><span></span></h3>
+            </div>
+            <div class="intro-animation">
+                <h2 class="abouts">About Us</h2>
+                <p>Envisioned with developing a hub for technical excellence particularly in the field of computer science and promoting competitive programming and coding as a culture in SNIST, Emerging Computers’ Arena (ECA) club was founded on 21st January 2011 by few students. Our club embraces the motto, “Empowering talents with knowledge”, and provides a platform for the students of SNIST to garner expertise on various advancements in computational technology. The Emerging Computers Arena (ECA) Club at SNIST is a technical club dedicated to fostering innovation, creativity, and technical skills among the students. We provide a platform for students to explore various fields of engineering and coding through workshops, projects, competitions, and events.</p>
+                
+            </div>
+            <a href="https://forms.gle/Q1C84ZFnpnN9SyGXA" target="_blank" class="join-button">Join Our Community</a>
+        </div>
+        <div class="right-content">
+            <div class="image-container">
+                <img src="image/GRP.jpg" alt="ECA club">
+                <div class="caption">ECA Club 2K24</div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="events">
+            <h2>Events</h2>
+            <!-- <p>Click the belows links </p> -->
+            <p class="RRR">Unlocking Innovation: Join Us at Our Upcoming Events</p>
+
+            <div class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4">
+                <div class="testimonial-item rounded">
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <span class="blink"><a href="https://forms.gle/Q1C84ZFnpnN9SyGXA">Open Session</a></span>
+                        </div>
+                        <p class="fs-5 m-0 pt-3">2024</p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded">
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <span class="blink"><a href="https://forms.gle/Q1C84ZFnpnN9SyGXA">Road Map to DSA</a></span>
+                        </div>
+                        <p class="fs-5 m-0 pt-3">Work Shop</p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded">
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <span class="blink"><a href="https://forms.gle/Q1C84ZFnpnN9SyGXA">Geek Week 4.0</a></span>
+                        </div>
+                        <p class="fs-5 m-0 pt-3">Upcoming Event!</p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded">
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <span class="blink"><a href="https://forms.gle/Q1C84ZFnpnN9SyGXA">Road Map to Placements</a></span>
+                        </div>
+                        <p class="fs-5 m-0 pt-3">Upcoming Event!</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item rounded">
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <span class="blink"><a href="https://forms.gle/Q1C84ZFnpnN9SyGXA">Technical Workshops</a></span>
+                        </div>
+                        <p class="fs-5 m-0 pt-3">Upcoming Event!</p>
+                    </div>
+                </div>
+            </div>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    // Get the number of items to clone
+                    var itemsToClone = 10;
+                    var clonedItems = $('.testimonial-carousel .owl-item').slice(0, itemsToClone).clone(true);
+                    $('.testimonial-carousel').append(clonedItems);
+            
+                    $(".testimonial-carousel").owlCarousel({
+                        loop: true,
+                        autoplay: false, 
+                        items: 5, 
+                        margin: 50, // Adjust margin between items
+                        responsive:{
+                            0:{
+                                items:1
+                            },
+                            600:{
+                                items:2
+                            },
+                            1000:{
+                                items:3
+                            }
+                        }
+                    });
+                });
+            </script>            
+
+            <h2>Highlighted-events:</h2>
+        <div class="image-grid">
+            <div class="image">
+                <img src="image/OPS.jpg" alt="Image 2">
+                <div class="caption">Eca Open session-2k24</div>
+            </div>
+            
+            <div class="image">
+                <img src="image/rm2.jpg" alt="Image 7">
+                <div class="caption">Road Map to DSA</div>
+            </div>
+            <!-- <h2>Past Events:</h2> -->
+            <div class="image">
+                <img src="image/ADP-DEV.jpg" alt="Image 8">
+                <div class="caption">Andriod Development</div>
+            </div>
+            <div class="image">
+                <img src="image/RM2PLC.jpg" alt="Image 9">
+                <div class="caption">Road Map to Placements</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join">
+        <div class="join-container">
+            <div class="left-part">
+                <h2>Join Us</h2>
+                <p>Ready to be a part of the ECA Club community? Join us and unleash your potential in the exciting world of engineering and coding!</p>
+                <h4 class="dis">Easy Steps:</h4>
+                <div class="rectangle-box">
+                    <p class="QR">Scan the QR</p>
+                </div>
+                <div class="rectangle-box1">
+                    <p>Fill the details According</p>
+                </div>
+                <div class="rectangle-box2">
+                    <p>Submit the form</p>
+                </div>
+                <div class="rectangle-box3">
+                    <p>Our Team will Contact you</p>
+                </div>
+                <div class="rectangle-box4">
+                    <p>Add to ur community</p>
+                </div>
+                <div class="rectangle-box5">
+                    <p>Lets explore together</p>
+                </div>
+                <a href="https://forms.gle/Q1C84ZFnpnN9SyGXA" target="_blank" class="join-button">Join Our Community</a>
+            </div>
+            <div class="right-part">
+                <img src="image/eca (1).png" alt="Scan">
+            </div>
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+        <!-- Contact Us section content -->
+        <h2>Contact Us</h2>
+        <p>Have questions or suggestions? Feel free to reach out to us at:</p>
+        <p>Our official club mail:</p>
+        <ul class="contact-info">
+            <li>
+                <img src="image/email icon.png" alt="Gmail Icon">
+                <a class="g" href="https://mail.google.com/mail/u/2/#inbox?compose=new">ecaclub@sreenidhi.edu.in</a>
+            </li>
+            <li>
+                <img src="image/phone icon.png" alt="Phone Icon">
+                <span> 123456987<p>Sai Krishna - President</p></span> <!-- Replace with actual phone number -->
+            </li>
+           
+        </ul>
+    </section>
+    
+    
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href=""> About us </a> </li>
+                        <li><a href="#"> Our board</a> </li>
+                        <li><a href="#">Eca-club</a> </li>
+                        <li><a href="#">SNIST</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li>Shruthi - Vice Prisedent </li>
+                        <li>9996663330</li>
+                        <li>Niteesh - General Secretary</li>
+                        <li>9995551110</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="g"> follows us </h4>
+                
+                        <div class="socialicons">
+                        <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://www.instagram.com/ecasnist/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/emerging-computers-arena-snist/mycompany/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Organizers</h4>
+                    <a href="https://sreenidhi.edu.in/"><img class="i1" src="image/SNIST.png"></a>
+                    <h5 class="hi">SNIST - ADDRESS</h5>
+                    <p>Sreenidhi institute os science and technology</p>
+                    <p>Yamnampet,Ghatkesar</p>
+                    <p>Hyderabad,India,501301</p>
+                    <p>Telangana</p>
+                    
+                    
+                    <!-- <ul>
+                        <li><a href="#"> about us </a> </li>
+                        <li><a href="#"> our services</a> </li>
+                        <li><a href="#">policy </a> </li>
+                        <li><a href="#">affilicate </a> </li>
+                    </ul> -->
+                </div>
+                <div class="footer-col">
+                    <!-- <h4>get help</h4>
+                    <p>Shruthi - Vice President</p>
+                    <p>9110760681</p>
+                    <p>Warlu - Tech Lead</p>
+                    <p>9110760681</p> -->
+                    
+                </div>
+                <div class="footer-col">
+                    <h4 class="g">Powered by</h4>
+                    <img class="hi2" src="image/ECA LOGO.jpg">
+                    <p>Designed by SAI VIKAS PASUPULA</p>
+                    <p>ORGANIZING-HEAD</p>
+                    <p>ECM- 3Rd Year</p>
+
+                   
+                 <!-- 
+                        <div class="socialicons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ecasnist/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/emerging-computers-arena-snist/mycompany/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div> -->
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  
+</body>
+
+</html>
